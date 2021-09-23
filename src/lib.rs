@@ -2,6 +2,8 @@ use proc_macro::TokenStream;
 use quote::{format_ident, quote};
 use syn::{parse_macro_input, Ident};
 
+//macros
+
 #[proc_macro]
 pub fn glue_runloop(ast: TokenStream) -> TokenStream {
 	let loop_name: Ident = parse_macro_input!(ast);
